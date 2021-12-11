@@ -9,6 +9,7 @@
   margin-top: 100px;
   position: relative;
   height: 400px;
+  overflow: hidden;
 }
 .main-menu ul {
   display: flex;
@@ -63,12 +64,16 @@
   text-align: center;
 }
 .main-menu ul li .two-item h4 {
-  margin: 20px 0;
   color: blue;
+  padding: 10px 0;
 }
 .main-menu ul li .two-item img {
   width: 80px;
   padding-top: 30px;
+}
+.main-menu ul li .two-item .com {
+  padding: 20px 50px;
+  cursor: pointer;
 }
 .main-menu ul li .two-item .com h5 {
   padding: 10px 0;
@@ -76,4 +81,20 @@
   font-size: 16px;
   color: white;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid blue;
+}
+.main-menu ul li .two-item .com h5:hover {
+  background: yellow;
+  color: blue;
+  border: 1px solid blue;
+}
+
+@media screen and (min-width: 1200px) {
+  .movie-modal .modal-dialog {
+    max-width: 1000px;
+  }
+}
+.next {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

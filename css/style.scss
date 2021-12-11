@@ -10,7 +10,7 @@
 	margin-top: 100px;
 	position: relative;
 	height: 400px;
-	// overflow: hidden;
+	overflow: hidden;
 	ul{
 		display: flex;
 		position: absolute;
@@ -62,19 +62,21 @@
 				height: 400px;
 				background-color: yellow;
 				position: relative;
-			  
+				
 		
 				text-align: center;
 				h4{
 				
-					margin: 20px 0;
 					color: blue;
+					padding: 10px 0;
 				}
 				img{
 					width: 80px;
 					padding-top: 30px;
 				}
 				.com{
+					padding: 20px 50px;
+					cursor: pointer;
 					h5{
 						
 						padding: 10px 0;
@@ -82,9 +84,32 @@
 						font-size: 16px;
 						color: white;
 						border-radius: 10px;
+						transition: .3s ease-in-out;
+						border: 1px solid blue;
+
+						&:hover{
+							background: yellow;
+							color: blue;
+							border: 1px solid blue;
+
+						}
 					}
 				}
 			}
 		}
 	}
 }
+
+//Modal Scss
+@media screen and (min-width:1200px) {
+    .movie-modal{
+        .modal-dialog{
+            max-width: 1000px;
+        }
+    }
+    
+}
+
+.next{
+    margin-bottom: 20px;
+   }
